@@ -1,3 +1,8 @@
+/*
+-----------------------------------------------------
+BASIC SETUP
+-----------------------------------------------------
+*/
 *
 {
     margin: 0;
@@ -14,27 +19,19 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+/*
+-----------------------------------------------------
+REUSABLE COMPONENT
+-----------------------------------------------------
+*/
+
 .row
 {
     max-width: 1140px;
     margin: 0 auto ;
 }
 
-header
-{
-    background-image:  linear-gradient(rgba(0,0,0.5),rgba(0,0,0,.5)),url("./img/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-.hero-text-box
-{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+/*------------------HEADINGS--------------------*/
 
 h1{
     margin: 0 0 20px 0;
@@ -45,6 +42,8 @@ h1{
     word-spacing: 4px;
 }
 
+
+/*------------------BUTTONS--------------------*/
 .btn:link,
 .btn-visted
 {
@@ -94,4 +93,26 @@ h1{
     background-color: #cf6d17;
     color:  #fff;
     
+}
+
+/*
+-----------------------------------------------------
+HEADER
+-----------------------------------------------------
+*/
+
+header
+{
+    background-image:  linear-gradient(rgba(0,0,0.5),rgba(0,0,0,.5)),url("./img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.hero-text-box
+{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
