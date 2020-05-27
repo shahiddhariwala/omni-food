@@ -227,6 +227,41 @@ header {
 .main-nav a:active {
   border-bottom: 2px solid #e67e22;
 }
+/* Sticky Nav */
+.logo-black {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fffffff5;
+  box-shadow: 0 2px 2px #e4e4e4;
+  z-index: 9999;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 19px 0;
+  color: #555;
+
+}
+
+.sticky .logo-black {
+  display: block;
+}
+.sticky .logo {
+  display: none;
+}
+
+.sticky .main-nav {
+  margin-top: 15px;
+}
 
 /*----------------------------------------------
 FEATURES
@@ -511,13 +546,11 @@ footer p {
 .social-links li a:link,
 .social-links li a:visited {
   font-size: 170%;
-
 }
 .ion-social-twitter,
 .ion-social-facebook,
 .ion-social-instagram,
-.ion-social-googleplus
-{
+.ion-social-googleplus {
   transition: color 0.3s;
 }
 .ion-social-twitter:hover {
